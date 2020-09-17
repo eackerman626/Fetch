@@ -3,6 +3,8 @@ import { Container, Row } from 'react-bootstrap';
 
 import Navbar from './Navbar';
 import Header from './Header';
+import createJsonData from '../../utils/createJsonData';
+
 import sampleData from '../../data.json';
 
 class Data extends Component {
@@ -21,7 +23,7 @@ class Data extends Component {
 			// const data = await response.json();
 
 			// use fake data now because of CORS issue
-			const data = sampleData;
+			const data = createJsonData(sampleData);
 
 			console.log('this is the data: ', data);
 			this.setState({ data: data });
