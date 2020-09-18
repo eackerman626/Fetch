@@ -7,8 +7,8 @@ class Header extends Component {
 		return (
 			<>
 				<Row>
-					<Col className="text-left ml-3">
-						<h1 id="title">TITLE</h1>
+					<Col className="text-left ml-3 h1">
+						<div id="title">Welcome to my List of Lists!</div>
 					</Col>
 				</Row>
 			</>

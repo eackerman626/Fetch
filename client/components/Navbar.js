@@ -11,7 +11,7 @@ class MyNavbar extends Component {
 	}
 
 	handleJsonClick() {
-		const jsonData = createJsonData(this.props.data);
+		const jsonData = this.props.data;
 		const fileName = 'data.json';
 
 		const fileToSave = new Blob([JSON.stringify(jsonData)], {

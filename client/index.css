@@ -2,35 +2,6 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.pie_container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	font-size: large;
-	font-weight: bold;
-}
-
-.pie_title {
-	margin-top: 1.5rem;
-}
-
-#school_title {
-	font-family: serif;
-	margin-top: 1rem;
-}
-
-.school_info {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.separator {
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
-}
-
 .background_color {
 	background-color: rgb(224, 237, 241);
 }
@@ -45,4 +16,8 @@ body,
 
 #container {
 	padding: 0%;
+}
+
+#title {
+	margin-top: 0.5rem;
 }

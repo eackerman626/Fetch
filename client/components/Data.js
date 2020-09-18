@@ -3,6 +3,7 @@ import { Container, Row } from 'react-bootstrap';
 
 import Navbar from './Navbar';
 import Header from './Header';
+import List from './List';
 import createJsonData from '../../utils/createJsonData';
 
 import sampleData from '../../data.json';
@@ -25,9 +26,7 @@ class Data extends Component {
 			// use fake data now because of CORS issue
 			const data = createJsonData(sampleData);
 
-			console.log('this is the data: ', data);
 			this.setState({ data: data });
-			console.log('this is the state: ', this.state);
 		} catch (err) {
 			console.log(err);
 		}
@@ -38,7 +37,7 @@ class Data extends Component {
 			<Container fluid="lg" className="background_color" id="container">
 				<Navbar data={this.state.data} />
 				<Header data={this.state.data} />
-				<Row className="justify-content-around m-2 background_color"></Row>
+				<List data={this.state.data} />
 			</Container>
 		);
 	}
