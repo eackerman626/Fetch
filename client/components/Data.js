@@ -19,7 +19,7 @@ class Data extends Component {
 	async componentDidMount() {
 		try {
 			console.log('yay component did mount');
-			const response = await fetch('https://fetch-hiring.s3.amazonaws.com/hiring.json', { mode: 'no-cors' });
+			const response = await fetch('https://fetch-hiring.s3.amazonaws.com/hiring.json');
 			const data = createJsonData(response.json());
 
 			// use fake data now because of CORS issue

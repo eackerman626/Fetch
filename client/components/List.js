@@ -26,7 +26,6 @@ function SmallList(props) {
 }
 function List(props) {
 	const bigList = props.data;
-	console.log('this is the big list: ', bigList);
 	if (bigList) {
 		return (
 			<Accordion>
