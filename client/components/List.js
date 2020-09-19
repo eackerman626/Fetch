@@ -4,7 +4,6 @@ import { Row, Accordion, Card, Button, ListGroup } from 'react-bootstrap';
 
 function SmallList(props) {
 	const smallList = props.smallList;
-	console.log('this is the small list: ', smallList);
 	return (
 		<Card>
 			<Card.Header>
